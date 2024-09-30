@@ -8,6 +8,7 @@ require_once '../commons/function.php'; // Hàm hỗ trợ
 require_once './controllers/AdminDanhmucController.php'; 
 require_once './controllers/AdminSanPhamController.php';
 require_once './controllers/AdminDonHangController.php';
+require_once './controllers/AdminBaoCaoThongKeController.php';
 
 // Require toàn bộ file Models
 require_once './models/AdminDanhMuc.php';
@@ -21,6 +22,11 @@ $act = $_GET['act'] ?? '/';
 // Để bảo bảo tính chất chỉ gọi 1 hàm Controller để xử lý request thì mình sử dụng match
 
 match ($act) {
+
+    //Route báo cáo thông kê - trang chủ
+    
+    '/' => (new AdminBaoCaoThongKeController())->home(),
+
     // Route Danh mục
     'danh-muc' =>(new AdminDanhmucController())->danhSachDanhMuc(),
 

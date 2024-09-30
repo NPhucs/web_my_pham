@@ -24,10 +24,10 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <a href="<?= BASE_URL_ADMIN?>" class="nav-link">
+            <i class="nav-icon fas fa-home"></i>
               <p>
-              Dashboard
+              Trang chủ
               </p>
             </a>
           </li>
@@ -55,7 +55,7 @@
 
           <li class="nav-item">
             <a href="<?= BASE_URL_ADMIN . '?act=don-hang' ?>" class="nav-link">
-            <i class="nav-icon fas fa-magic"></i>
+            <i class="nav-icon fas fa-file-invoice-dollar"></i>
               <p>
                 Đơn hàng              
               </p>
