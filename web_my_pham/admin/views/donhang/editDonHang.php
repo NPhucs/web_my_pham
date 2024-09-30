@@ -74,7 +74,7 @@
                     
                   <hr>
                         
-                  <div class="form-group">
+                <div class="form-group">
                 <label for="inputStatus">Trạng thái đơn hàng</label>
                 <select id="inputStatus" name="trang_thai_id" class="form-control custom-select">
                     <?php foreach($listTrangThaiDonHang as $trangThai) : ?>

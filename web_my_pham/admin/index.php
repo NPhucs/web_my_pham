@@ -8,12 +8,14 @@ require_once '../commons/function.php'; // Hàm hỗ trợ
 require_once './controllers/AdminDanhmucController.php'; 
 require_once './controllers/AdminSanPhamController.php';
 require_once './controllers/AdminDonHangController.php';
+require_once './controllers/AdminTaiKhoanController.php';
 require_once './controllers/AdminBaoCaoThongKeController.php';
 
 // Require toàn bộ file Models
 require_once './models/AdminDanhMuc.php';
 require_once './models/AdminSanPham.php';
 require_once './models/AdminDonHang.php';
+require_once './models/AdminTaiKhoan.php';
 
 
 // Route
@@ -68,5 +70,16 @@ match ($act) {
 
     'chi-tiet-don-hang' =>(new AdminDonHangController())->detailDonHang(),
 
+
+    //Quản lý tài khoản
+    'list-tai-khoan-quan-tri' =>(new AdminTaiKhoanController())->danhSachQuanTri(),
+
+    'form-them-quan-tri' =>(new AdminTaiKhoanController())->formAddQuanTri(),
+
+    'them-quan-tri' =>(new AdminTaiKhoanController())->postAddQuanTri(),
+
+    'form-sua-quan-tri' =>(new AdminTaiKhoanController())->formEditQuanTri(),
+
+    'sua-quan-tri' =>(new AdminTaiKhoanController())->postEditQuanTri(),
 
 };
