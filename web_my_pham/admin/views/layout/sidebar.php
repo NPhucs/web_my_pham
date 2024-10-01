@@ -64,26 +64,26 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
+            <i class="nav-icon fas fa-users"></i>
               <p>Quản lý tài khoản</p>
               <i class="fas fa-angle-left right"></i>
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
                     <a href="<?= BASE_URL_ADMIN . '?act=list-tai-khoan-quan-tri' ?>" class="nav-link">
-                    <i class="nav-icon far fa-user"></i>
+                    <i class="nav-icon fas fa-user"></i>
                       <p>Tài khoản quản trị</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-user"></i>
+                    <a href="<?= BASE_URL_ADMIN . '?act=list-tai-khoan-khach-hang' ?>" class="nav-link">
+                    <i class="nav-icon fas fa-user"></i>
                       <p>Tài khoản Khách hàng</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-user"></i>
+                    <i class="nav-icon fas fa-user"></i>
                       <p>Tài khoản cá nhân</p>
                     </a>
                 </li>
