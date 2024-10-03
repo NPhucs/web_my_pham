@@ -137,7 +137,6 @@
                     <form action="<?= BASE_URL_ADMIN . '?act=update-trang_thai-binh-luan' ?>" method="POST">
                       <input type="hidden" name="id_binh_luan" value="<?= $binhLuan['id']?>">
                       <input type="hidden" name="name_view" value="detail_khach">
-                      <input type="hidden" name="id_khach_hang" id="" value="<?= $binhLuan['tai_khoan_id']?>">
                       <button onclick="return confirm('Bạn có đồng ý chứ?')" class="btn btn-warning" >
                         <?= $binhLuan['trang_thai'] == 1 ? 'Ẩn' : 'Bỏ ẩn'?>
                       </button>
