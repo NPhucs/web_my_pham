@@ -235,6 +235,7 @@ class AdminTaiKhoanController{
         require_once './views/auth/formLogin.php';
 
         deleteSessionError();
+        exit();
 
 
     }
@@ -259,7 +260,7 @@ class AdminTaiKhoanController{
                 // Lỗi thì lưu lỗi vào session
                 $_SESSION['error'] = $user;
 
-                $_SESSION['flash'] == true;
+                $_SESSION['flash'] = true;
 
                 header("Location: " . BASE_URL_ADMIN . '?act=login-admin');
                 exit;
